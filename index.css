@@ -94,7 +94,11 @@ input::-webkit-inner-spin-button {
 .btn-clear{
     font-size: 1.5rem;
     background-color: rgb(237, 115, 49);
+}
 
+.btn-clear:focus{
+    font-size: 1.5rem;
+    background-color: rgb(234, 47, 0);
 }
 
 .btn_container{
