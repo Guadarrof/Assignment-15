@@ -1,0 +1,129 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.background{
+    background-color: rgb(94, 96, 142);
+    border-radius: 9px/9px;
+    border: 5px solid rgb(55, 56, 90);
+    margin:10% 30%;
+    padding: 1px;
+}
+
+.foreground{
+    margin: 1%;
+    padding: 5%;
+}
+
+.num__input{
+    background-color: white;
+    height: 30px;
+    border: 3px solid rgb(55, 56, 90);
+    border-radius: 9px/9px;
+}
+
+.output{
+    border: 5px solid rgb(70, 55, 90);
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px/9px;
+
+}
+
+.output_text{
+    width: 100%;
+    text-align: end;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.num_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.num_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num__input{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.operators_info, .num__p {
+    background-color:rgb(189, 191, 245) ;
+    padding: 0.75rem;
+    border-radius: 9px/9px;
+}
+
+.operators_info{
+    text-align: center;
+}
+
+.operators__btn{
+    background-color: rgb(35, 36, 59);
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    border-radius: 9px/9px;
+}
+.operators__btn:focus{
+    background-color: rgb(255, 187, 77);
+}
+
+.btn-clear{
+    font-size: 1.5rem;
+    background-color: rgb(237, 115, 49);
+
+}
+
+.btn_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:980px) {
+    .num_container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:790px) {
+    .btn_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .background{
+        margin:10% 20%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .background{
+        margin:10% 15%;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="background">
+        <div class="foreground">
+            <div class="output">
+                <p class="output_text" id="result-output"></p>
+            </div>
+            <div class="calculator">
+                <div class="num_container">
+                    <div class="num_group">
+                        <p class="num__p">Number 1</p>
+                        <input class="num__input" type="number" id="num1">
+                    </div>
+                    <div class="num_group">
+                        <p class="num__p">Number 2</p>
+                        <input class="num__input" type="number" id="num2">
+                    </div>
+
+                </div>
+                <div class="operators">
+                    <p class="operators_info">Operators</p>
+                    <div class="btn_container">
+                    <button class="operators__btn" onclick="add()" id="add-btn"> + </button>
+                    <button class="operators__btn" onclick="subtract()" id="subtract-btn"> - </button>
+                    <button class="operators__btn" onclick="multiply()" id="multiply-btn"> x </button>
+                    <button class="operators__btn" onclick="divide()" id="divide-btn"> / </button>
+                    <button class="operators__btn btn-clear" onclick="clearFields()" id="clear-btn">AC</button>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div> 
+    <script src="./index.js"></script>
+</body>
+</html>
